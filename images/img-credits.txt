@@ -1,0 +1,4 @@
+cafe-gathering: https://unsplash.com/photos/4YApsoSaNKA
+cafe-menu: https://unsplash.com/photos/L6gWVV20ah8
+whatsnew-img: https://unsplash.com/photos/ykThMylLsbY
+location-img: Google Maps 
