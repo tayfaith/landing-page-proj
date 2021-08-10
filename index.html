@@ -1,0 +1,101 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Collabo-Café</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <p id="header__text">Collabo-Café</p>
+
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="about" data-nav="Section 1" class="about">
+      <div class="landing__container">
+        <div class="about-text">
+            <h2>About</h2>
+            <p>Collabo-Café aims to provide a space for collaboration, be it for work or a get-together among friends. At a flat fee of $15, guests can spend as long as they wish at Collabo-Café. Guests can also enjoy complementary drinks like snacks. Collabo-Café also serves delectable desserts, artisan coffee as well as main meals like pasta and sandwiches. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra.</p>
+        
+            <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        </div>
+            <img class="about-img" src="images/cafe-gathering.webp" alt="cafe-gathering">
+      </div>
+    </section>
+
+    <section id="menu" data-nav="Section 2">
+      <div class="landing__container">
+        <div class="menu-text">
+          <h2>Menu</h2>
+          <p>Collabo-Café serves a variety of food, ranging from pastries to go along with your coffee, as well as dishes to fill you up like pasta and burgers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+          <p class="menu-link">Click here to view the full menu</p>
+        </div>
+        <img class="menu-img" src="images/cafe-menu.webp" alt="cafe-menu">
+      </div>
+    </section>
+
+    <section id="whats-new" data-nav="Section 3">
+      <div class="landing__container">
+        <div class="whatsnew-text">
+          <h2>What's New</h2>
+          <p>We've heard your feedback and have installed more power sockets around the café. You can expect one power socket per guest for future visits! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod. </p>
+          <p>In the spirit of National Day, you can enjoy a cup of Milo Dinosaur for each set of Chicken Rice that you purchase for an additional $1! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        </div>
+        <img class="whatsnew-img" src="images/whatsnew-img.webp" alt="whats-new">
+      </div>
+    </section>
+
+    <section id="connect" data-nav="Section 4">
+      <div class="landing__container">
+        <div class="connect-text">
+          <h2>Connect</h2>
+          <p class="visit-us"><b>Visit Us</b></p>
+          <p>Lily Complex <br> 2 Lily Road #1-23 <br> <i class="fa fa-phone"></i> 6123 4567 <p><br>
+          <p><b class="contact-us">Contact Us</b><br> Have any queries or suggestions? Leave us a message.</p>
+
+          <div class="form">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname">
+        
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname">
+        
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+            
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject"></textarea>
+        
+              <input type="submit" value="Submit">
+            </form>
+          </div> 
+        </div>
+        <img class="location-img" src="images/cafe-location.png" alt="location-img">
+      </div>
+    </section>
+  </main>
+  
+  <footer class="page__footer">
+    <p>&copy Faith Tay | 2021</p>
+  </footer>
+
+</body>
+
+<script src="app.js"></script>
+</html>
